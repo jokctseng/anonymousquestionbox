@@ -17,7 +17,7 @@ export default function QuestionDialog(props) {
             setError(true);
             return;
         }
-        if (content.toLowerCase().includes("test") || content.includes("测试")) {
+        if (content.toLowerCase().includes("test") || content.includes("測試")) {
             setError(true);
             return;
         }
@@ -33,15 +33,15 @@ export default function QuestionDialog(props) {
     return (
         <div>
             <Dialog open={open} onClose={handleClose}>
-                <DialogTitle>提问</DialogTitle>
+                <DialogTitle>提問</DialogTitle>
                 <DialogContent>
                     <Alert severity="warning">
                         <strong>
-                            除了问题以外的任何信息都不会被记录。
+                            除了所提問題之外的任何個資都不會被記錄
                             <br />
-                            提问请遵循当地的法律法规，切勿涉及政治、色情、暴力等非法内容。
+                            提問請勿涉及違法內容，提問不代表一定會被回答
                             <br />
-                            只有被回答的问题才会出现在首页列表中。
+                            只有被回答的問題會出現在首頁
                         </strong>
                     </Alert>
                     <TextField
