@@ -55,13 +55,13 @@ export default function QuestionDialog(props) {
                         multiline
                         margin="dense"
                         id="content"
-                        label="问题内容"
+                        label="問題內容"
                         variant="filled"
                     />
                 </DialogContent>
                 <DialogActions>
                     <Button onClick={handleClose}>取消</Button>
-                    <Button onClick={handleSubmit}>提交</Button>
+                    <Button onClick={handleSubmit}>發表</Button>
                 </DialogActions>
             </Dialog>
         </div>
