@@ -6,7 +6,7 @@ export default async function handler(req, res) {
     const { token } = req.headers;
     if (!checkToken(token)) {
         res.status(401).json({
-            msg: "请先登录",
+            msg: "請先登入",
         });
         return;
     }
@@ -15,6 +15,6 @@ export default async function handler(req, res) {
     const question = await query.first();
     await question.destroy();
     res.status(200).json({
-        msg: "删除成功",
+        msg: "刪除成功",
     });
 }
