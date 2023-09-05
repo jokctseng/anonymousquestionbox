@@ -28,7 +28,7 @@ export default function LoginDialog(props) {
                 <DialogContent>
                     <Alert severity="info">
                         <strong>
-                            請輸入User_Key）
+                            請輸入User_Key
                         </strong>
                     </Alert>
                     <TextField
