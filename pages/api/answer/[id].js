@@ -4,7 +4,7 @@ export default async function handler(req, res) {
     const { id } = req.query;
     if (id === 'undefined') {
         res.status(201).json({
-            msg: "等待重新请求",
+            msg: "等待",
         });
         return;
     }
