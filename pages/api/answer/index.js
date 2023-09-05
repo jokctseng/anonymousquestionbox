@@ -6,7 +6,7 @@ export default async function handler(req, res) {
     const { token } = req.headers;
     if (!checkToken(token)) {
         res.status(401).json({
-            msg: "请先登录",
+            msg: "請先登入",
         });
         return;
     }
