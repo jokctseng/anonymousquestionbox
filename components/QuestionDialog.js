@@ -37,8 +37,7 @@ export default function QuestionDialog(props) {
                 <DialogContent>
                     <Alert severity="warning">
                         <strong>
-                            除了所提問題之外的任何個資都不會被記錄
-                            <br />
+                            
                             提問請勿涉及違法內容，提問不代表一定會被回答
                             <br />
                             只有被回答的問題會出現在首頁
