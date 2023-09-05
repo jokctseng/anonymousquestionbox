@@ -74,11 +74,11 @@ export default function Home(props) {
             </Alert>
             <div className={styles.buttonBar}>
                 <Button onClick={() => setOpen(true)} sx={{ maxWidth: 400, width: logged ? "50%" : "100%" }} variant="contained">
-                    提问
+                    發問
                 </Button>
                 {logged && (
                     <Button onClick={() => router.push(`/settings?token=${token}`)} sx={{ maxWidth: 400, width: "50%" }} variant="contained">
-                        设置
+                        設置
                     </Button>
                 )}
             </div>
